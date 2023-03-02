@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Sans&display=swap');
+
+* {
+box-sizing: border-box;
+}
+header{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+}
+.logo{
+    height: 70px;
+    margin: 1rem 0 0 1rem
+}
+
+body .mensaje{
+    margin-left: 2rem;
+    grid-area: mensaje;
+    text-align: center;
+    color: #F0F0F0;
+    font-weight: bold;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    
+    "mensaje mensaje"
+    "prestamo plan";
+}
+
+.usuario_error{
+    font-size: 70px;
+    font-weight: bold;
+    padding: 1rem;
+    margin-left: 2rem;
+}
+
+body {
+background: linear-gradient(to right, rgb(248, 189, 118), rgb(235, 142, 11));
+font-family: 'DM Sans', sans-serif;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+margin: 0;
+}
+
+.contenedor{
+    grid-area: prestamo;
+}
+
+.contenedorTabla{
+    grid-area: plan;
+}
+
+#contenedor, #contenedorTabla {
+background-color: #FFF;
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+overflow: hidden;
+width: 800px;
+max-width: 100%;
+margin: 3rem    ;
+}
+
+#contenedorTabla {
+width: 800px;
+max-height: 820px;
+overflow-y: scroll;
+}
+
+
+
+.header, thead {
+border-bottom: 1px solid #F0F0F0;
+background-color: #F7F7F7;
+padding: 20px 40px;
+}
+
+.header h2 {
+margin: 0;
+}
+
+#frmPrestamo {
+padding: 30px 40px;
+}
+
+#frmPrestamo .control label {
+margin-bottom: 5px;
+}
+
+#frmPrestamo .control input, #frmPrestamo .control select {
+border: 2px solid rgb(231, 130, 52);
+border-radius: 4px;
+font-family: inherit;
+font-size: 14px;
+padding: 10px;
+width: 100%;
+}
+
+#frmPrestamo .control input:focus {
+outline: 0;
+border-color: rgb(229, 112, 22);
+}
+
+#frmPrestamo button {
+background: rgb(229, 112, 22);
+border: 2px solid rgb(229, 112, 22);
+border-radius: 4px;
+color: whitesmoke;
+display: block;
+font-family: inherit;
+font-size: medium;
+padding: 10px;
+margin-top: 20px;
+width: 100%;
+}
+
+table {
+border: 2px solid rgb(229, 112, 22);
+border-collapse: collapse;
+border-radius: 4px;
+width: 100%;
+text-align: center;
+font-family: inherit;
+font-size: 0.9em;
+padding: 10px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+table thead tr {
+background: rgb(229, 112, 22);
+color: white;
+text-align: left;
+font-weight: bold;
+}
+
+table thead, td {
+padding: 12px 15px;
+}
+
+table tbody tr {
+border-bottom: 1px solid #F0F0F0;
+}
+
+table tbody tr:nth-last-of-type(even) {
+background-color: #F3F3F3;
+}
+
+table tbody tr:last-of-type {
+border-bottom: 2px solid rgb(229, 112, 22);
+}
+
+table tbody tr:hover {
+color: white;
+background: rgba(244, 175, 91, 0.77);
+}
+
+table tfoot {
+background: rgb(229, 112, 22);
+color: white;
+}
+

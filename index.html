@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="./img/deloreanfuego.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link de mi css -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Prestamos Delorean</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./img/deloreanfuego.png" alt="Logo de la empresa">
+        
+        <div name="frmPrestamo" id="frmPrestamo">
+            <div class="control">
+                <h1>Registrate</h1>
+                <label for="">Usuario</label>
+                <input type="text" id="nombre">
+                <label for="">Password</label>
+                <input type="text" id="pass">
+                <button id="btn_registro">Registrate</button>
+            </div>
+                <button id="btn_login">Login</button>
+        </div>
+    </header>
+    <main>
+    <div class="mensaje" id="mensaje">
+
+    </div>
+    <div id="contenedor">
+        <div class="header">
+            <h2>Solicitud de préstamo</h2>
+        </div>
+        <div name="frmPrestamo" id="frmPrestamo">
+        <div class="control">
+            <label for="nombre">Nombre completo: <input type="text" name="nombre" id="nombre" placeholder="Nombre completo"></label>
+        </div>
+        <div class="control">
+            <label for="garantia">Garantía:
+            <select name="garantia" id="garantia" placeholder="garantia">
+                <option value="recibo">Recibo de sueldo</option>
+                <option value="monotributo">Monotributo</option>
+                <option value="garante">Garante</option>
+                <option value="seguro">Seguro de caución</option>
+            </select>
+            </label>
+        </div>
+        <div class="control">
+            <label for="monto">Monto: <input type="number" name="monto" id="monto" placeholder="Monto" min="1000"
+            step="1000"></label>
+        </div>
+        <div class="control">
+            <label for="interes">Interés: <input type="number" name="interes" id="interes" placeholder="interés" min="25" max="75" step="25"></label>
+        </div>
+        <div class="control">
+            <label for="plazo">Cantidad de cuotas (12, 24 o 36): <input type="number" name="plazo" id="plazo" placeholder="plazo" min="12"
+                step="12" max="36"></label>
+        </div>
+        
+        <button id="simular" onclick="simular_prestamo()">Simular préstamo</button>
+        </div>
+    </div>
+
+    <div id="contenedorTabla">
+        <div class="header">
+        <h2>Tu plan de cuotas</h2>
+        </div>
+    
+        <div id="amortizaciones">
+    
+        </div>
+    </div>
+</main>
+    <script src="prestamo.js"></script>
+</body>
+</html>
